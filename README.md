@@ -13,11 +13,16 @@ It is a project trying to solve the logging dilemma for modern B+-tree indexing 
   YCSB benckmark with Random, Uniform, ScrambledZipf, SkewedZipf distributions for generating key-values.
   
 # Build
-  * liburing must be installed for block IO, which functonalities have been integritied to the implementation.
+  * liburing must be installed for block IO, which functionalities have been integrated into the implementation.
   * Configurations, including: 
+  
       (1) (dis)enable baseline (typical B+-tree implementaion); 
+      
       (2) (dis)enable pB+-tree (pB+-tree implementaion);
-      (3) parameters (e.g., buffer pool size, key-value size, buffer pool thresholds, workload-related settings) should be tuned mannully
+      
+      (3) parameters (e.g., buffer pool size, key-value size, buffer pool thresholds, workload-related settings) should be tuned manually in test.cc
+      
+      (4) Makefile should be updated based on your config
 
 ```
 make && ./test
