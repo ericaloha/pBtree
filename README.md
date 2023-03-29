@@ -10,7 +10,7 @@ It is a project trying to solve the logging dilemma for modern B+-tree indexing 
   3. Support multi-client processing, see test.cc template for details.
 
 # Benchmark
-  YCSB benckmark with Random, Uniform, ScrambledZipf, SkewedZipf distributions for generating key-values.
+  YCSB benckmark with Random, Uniform, ScrambledZipf, SkewedZipf distributions for generating key-values. It is embedded into test.cc.
   
 # Build
   * liburing must be installed for block IO, which functionalities have been integrated into the implementation.
